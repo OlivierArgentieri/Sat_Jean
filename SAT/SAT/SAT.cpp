@@ -5,11 +5,17 @@
 #include "TableCase.h"
 #include "Parser.h"
 #include "TruthTable.h"
+#include <iostream>
 
 int main()
 {
+	std::string input;
+
+	std::cout << "Expression : " << std::endl;
+	std::cin >> input;
+
 	Parser *p = new Parser();
-	Node* t = p->Parse("(a.b)+(c.d)");
+	Node* t = p->Parse(input);
 
 	TableCase::GetInstance()->CreateTable();
 	TruthTable *test = new TruthTable(t);

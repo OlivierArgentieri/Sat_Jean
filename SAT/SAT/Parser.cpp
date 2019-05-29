@@ -61,7 +61,6 @@ Node* Parser::Parse(std::string _s)
 	}
 	int i = GetLessOperatorIndex(_s);
 
-
 	Node *LeftValue = nullptr;
 	Node *RightValue = nullptr;
 	if (!_s.empty() && _s != "!" )
