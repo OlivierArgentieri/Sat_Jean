@@ -54,7 +54,7 @@
     <ClInclude Include="Node_Not.h">
       <Filter>Header Files\Node\Not</Filter>
     </ClInclude>
-    <ClInclude Include="truthTable.h">
+    <ClInclude Include="TruthTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -82,6 +82,9 @@
     </ClCompile>
     <ClCompile Include="Node_Not.cpp">
       <Filter>Source Files\Node\Not</Filter>
+    </ClCompile>
+    <ClCompile Include="TruthTable.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

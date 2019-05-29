@@ -1,7 +1,8 @@
-﻿  Node.cpp
-  Node_Not.cpp
-  Operator.cpp
-  Operator_And.cpp
+﻿  Operator_And.cpp
   Operator_Or.cpp
+  SAT.cpp
+  TableCase.cpp
+d:\olivierargentieri\github_pull\sat_jean\sat\sat\tablecase.cpp(38): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  TruthTable.cpp
   Generating Code...
   SAT.vcxproj -> D:\OlivierArgentieri\Github_pull\Sat_Jean\SAT\Debug\SAT.exe

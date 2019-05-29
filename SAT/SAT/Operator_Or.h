@@ -7,6 +7,7 @@ private:
 
 
 public:
+	Operator_Or(Node& _refNodeLeft, Node& _refNodeRight);
 	bool GetResult() override;
 
 };

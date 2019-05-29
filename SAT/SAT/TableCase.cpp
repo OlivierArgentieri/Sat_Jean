@@ -67,3 +67,8 @@ void TableCase::Display()
 
 	}
 }
+
+int TableCase::GetNbPossibility()
+{
+	return  m_nb_possibility_;
+}
