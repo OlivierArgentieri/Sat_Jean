@@ -38,9 +38,9 @@ void TruthTable::WhatIsThis()
 	if(IsTautology())
 		std::cout << " -> Tautology" << std::endl;
 	else if(IsSatisfaisable())
-		std::cout << " -> Satisfaisable" << std::endl;
+		std::cout << " -> Non statisfaisable" << std::endl;
 	else
-		std::cout << " -> Normal" << std::endl;
+		std::cout << " -> Satisfaisable" << std::endl;
 }
 
 bool TruthTable::IsTautology()
