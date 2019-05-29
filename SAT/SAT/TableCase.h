@@ -18,4 +18,5 @@ public:
 	void AddCols(std::string _sValue);
 	void NextRow();
 	void CreateTable();
+	bool GetValue(std::string _sKey);
 };

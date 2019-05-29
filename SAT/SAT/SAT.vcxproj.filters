@@ -62,5 +62,11 @@
     <ClCompile Include="TableCase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MonoLitteral_And.cpp">
+      <Filter>Source Files\Node\MonoLitteral</Filter>
+    </ClCompile>
+    <ClCompile Include="MonoLitteral_Or.cpp">
+      <Filter>Source Files\Node\MonoLitteral</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -6,6 +6,10 @@ class MonoLitteral : public Node
 private:
 
 protected:
-	virtual bool GetResult() override;
+	Node* m_ptr_left;
+	Node* m_ptr_right;
 
+	virtual bool GetResult() =0;
+	void AddNodeLeft(Node& _refNodeLeft);
+	void AddNodeRight(Node& _refNodeRight);
 };

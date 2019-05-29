@@ -45,3 +45,8 @@ void TableCase::CreateTable()
 		j = j << 1;
 	}
 }
+
+bool TableCase::GetValue(std::string _sKey)
+{
+	return m_main_table_[_sKey][m_current_row_];
+}

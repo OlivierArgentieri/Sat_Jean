@@ -160,6 +160,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MonoLitteral.cpp" />
+    <ClCompile Include="MonoLitteral_And.cpp" />
+    <ClCompile Include="MonoLitteral_Or.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
