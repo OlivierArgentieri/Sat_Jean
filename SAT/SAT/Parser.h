@@ -8,15 +8,16 @@
 class Parser
 {
 private:
-	std::vector<Node_Value> m_monolitteral_;
+	std::vector<Node*> m_nodes_;
 
 	void RemoveUselessParenthesis(std::string& _sRef);
 	bool ContainsUselessParenthesis(std::string& _sRef);
 	int GetLessOperatorIndex(std::string _s);
 
-
 	bool IsOnlyLetter(std::string _s);
+
 public:
-	Parser(std::string _sExpression);
+	Parser();
+	~Parser();
 	Node* Parse(std::string _s);
 };

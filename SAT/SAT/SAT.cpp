@@ -8,12 +8,14 @@
 
 int main()
 {
-	Parser *p = new Parser("");
-	Node* t = p->Parse("!a+b.c");
+	Parser *p = new Parser();
+	Node* t = p->Parse("!(a+b)+c");
 
 	TableCase::GetInstance()->CreateTable();
 	TruthTable *test = new TruthTable(t);
 	
 	test->Display();
 	TableCase::GetInstance()->Display();
+
+	delete p;
 }

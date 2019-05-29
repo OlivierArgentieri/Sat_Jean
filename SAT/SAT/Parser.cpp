@@ -30,15 +30,25 @@ bool Parser::ContainsUselessParenthesis(std::string& _sRef)
 
 		if (count > 0 && parenthesis_index == 0 && count == _sRef.size() - 1)
 			return true;
-		else if (parenthesis_index == 0)
+		if (parenthesis_index == 0)
 			return false;
 		count++;
 	}
 	return false;
 }
 
-Parser::Parser(std::string _sExpression)
+Parser::Parser()
 {
+}
+
+Parser::~Parser()
+{
+	for (int i = m_nodes_.size() - 1; i > 0; i--)
+	{
+		if (m_nodes_[i] != nullptr)
+			delete m_nodes_[i];
+		m_nodes_.erase(m_nodes_.begin() + i);
+	}
 }
 
 Node* Parser::Parse(std::string _s)
@@ -63,15 +73,17 @@ Node* Parser::Parse(std::string _s)
 
 	switch (_s[i])
 	{
-
 	case '.':
-		return new Operator_And(*LeftValue, *RightValue);
+		m_nodes_.push_back(new Operator_And(*LeftValue, *RightValue));
+		return *(m_nodes_.begin()+m_nodes_.size()-1);
 
 	case '+':
-		return new Operator_Or(*LeftValue, *RightValue);
-
+		m_nodes_.push_back(new Operator_Or(*LeftValue, *RightValue));
+		return *(m_nodes_.begin() + m_nodes_.size() - 1);
+	
 	case '!':
-		return new Node_Not(*RightValue);
+		m_nodes_.push_back(new Node_Not(*RightValue));
+		return *(m_nodes_.begin() + m_nodes_.size() - 1);
 	}
 }
 
@@ -100,7 +112,7 @@ int Parser::GetLessOperatorIndex(std::string _s)
 		if (c == ')')
 			parenthesis_index--;
 
-		if (c == '+' && min_parenthesis_index > parenthesis_index)
+		if (c == '+' && min_parenthesis_index >= parenthesis_index)
 		{
 			min_parenthesis_index = parenthesis_index;
 			less_index = index;
