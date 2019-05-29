@@ -1,5 +1,4 @@
-﻿  Operator_And.cpp
-  Parser.cpp
-  TruthTable.cpp
+﻿  Parser.cpp
+  SAT.cpp
   Generating Code...
-  SAT.vcxproj -> D:\OlivierArgentieri\Github_pull\Sat_Jean\SAT\Debug\SAT.exe
+d:\olivierargentieri\github_pull\sat_jean\sat\sat\parser.cpp(48): error C4716: 'Parser::Parse': must return a value

@@ -3,6 +3,7 @@
 
 #include "pch.h"
 #include "TableCase.h"
+#include "Parser.h"
 
 int main()
 {
@@ -15,4 +16,8 @@ int main()
 	TableCase::GetInstance()->CreateTable();
 
 	TableCase::GetInstance()->Display();
+
+
+	Parser *p = new Parser("a.b+c");
+	
 }

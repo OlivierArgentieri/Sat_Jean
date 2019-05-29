@@ -38,6 +38,15 @@ Parser::Parser(std::string _sExpression)
 	m_working_string_ = _sExpression;
 }
 
+Node& Parser::Parse()
+{
+	RemoveUselessParenthesis();
+	int i = GetLessOperatorIndex();
+
+
+	return new 
+}
+
 int Parser::GetLessOperatorIndex()
 {
 	int less_index = 0;

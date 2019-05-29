@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Node.h"
 
 class Parser
 {
@@ -9,7 +10,12 @@ private:
 
 	void RemoveUselessParenthesis();
 	bool ContainsUselessParenthesis();
+	int GetLessOperatorIndex();
+
 public:
+	Parser(std::string _sExpression);
+	Node& Parse();
+
 
 
 
