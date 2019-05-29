@@ -1,0 +1,3 @@
+﻿  TableCase.cpp
+d:\olivierargentieri\github_pull\sat_jean\sat\sat\tablecase.cpp(37): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  SAT.vcxproj -> D:\OlivierArgentieri\Github_pull\Sat_Jean\SAT\Debug\SAT.exe
