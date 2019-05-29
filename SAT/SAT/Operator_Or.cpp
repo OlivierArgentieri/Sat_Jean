@@ -1,7 +1,7 @@
 #include "pch.h"
-#include "MonoLitteral_Or.h"
+#include "Operator_Or.h"
 
-bool MonoLitteral_Or::GetResult()
+bool Operator_Or::GetResult()
 {
 	if (m_ptr_left == nullptr || m_ptr_right == nullptr)
 		throw; // todo NullException

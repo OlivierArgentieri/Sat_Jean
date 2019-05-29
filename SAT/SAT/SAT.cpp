@@ -2,9 +2,15 @@
 //
 
 #include "pch.h"
-#include <iostream>
+#include "TableCase.h"
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	TableCase::GetInstance()->AddRow("A");
+	TableCase::GetInstance()->AddRow("B");
+	TableCase::GetInstance()->AddRow("C");
+
+	TableCase::GetInstance()->CreateTable();
+
+	TableCase::GetInstance()->Display();
 }

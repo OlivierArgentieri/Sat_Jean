@@ -1,7 +1,7 @@
 #pragma once
 #include "Node.h"
 
-class MonoLitteral : public Node
+class Operator : public Node
 {
 private:
 

@@ -15,8 +15,9 @@ private:
 
 public:
 	static TableCase* GetInstance();
-	void AddCols(std::string _sValue);
-	void NextRow();
+	void AddRow(std::string _sValue);
+	void NextCols();
 	void CreateTable();
 	bool GetValue(std::string _sKey);
+	void Display();
 };

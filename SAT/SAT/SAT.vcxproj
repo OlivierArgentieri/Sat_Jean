@@ -151,17 +151,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="MonoLitteral.h" />
-    <ClInclude Include="MonoLitteral_And.h" />
-    <ClInclude Include="MonoLitteral_Or.h" />
+    <ClInclude Include="Operator.h" />
+    <ClInclude Include="Operator_And.h" />
+    <ClInclude Include="Operator_Or.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="TableCase.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MonoLitteral.cpp" />
-    <ClCompile Include="MonoLitteral_And.cpp" />
-    <ClCompile Include="MonoLitteral_Or.cpp" />
+    <ClCompile Include="Operator.cpp" />
+    <ClCompile Include="Operator_And.cpp" />
+    <ClCompile Include="Operator_Or.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

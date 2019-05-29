@@ -16,14 +16,17 @@
     <Filter Include="Header Files\Node">
       <UniqueIdentifier>{716dcbd8-e3f6-4628-b917-40f6917d5534}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Node\MonoLitteral">
-      <UniqueIdentifier>{eb2a5ba2-4c13-4e6c-9cc8-6eb8ae7af745}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Node">
       <UniqueIdentifier>{08160c94-d78a-4aa9-8452-2759d74ebf2d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Node\MonoLitteral">
+    <Filter Include="Header Files\Node\Operator">
+      <UniqueIdentifier>{eb2a5ba2-4c13-4e6c-9cc8-6eb8ae7af745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Node\Operator">
       <UniqueIdentifier>{583d1686-1586-49d8-afd1-58b57d52db9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Node\Not">
+      <UniqueIdentifier>{830d3c02-63a8-46ee-87e6-4fde5b6e76da}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,17 +36,17 @@
     <ClInclude Include="Node.h">
       <Filter>Header Files\Node</Filter>
     </ClInclude>
-    <ClInclude Include="MonoLitteral.h">
-      <Filter>Header Files\Node\MonoLitteral</Filter>
-    </ClInclude>
-    <ClInclude Include="MonoLitteral_And.h">
-      <Filter>Header Files\Node\MonoLitteral</Filter>
-    </ClInclude>
     <ClInclude Include="TableCase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MonoLitteral_Or.h">
-      <Filter>Header Files\Node\MonoLitteral</Filter>
+    <ClInclude Include="Operator.h">
+      <Filter>Header Files\Node\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="Operator_And.h">
+      <Filter>Header Files\Node\Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="Operator_Or.h">
+      <Filter>Header Files\Node\Operator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -56,17 +59,17 @@
     <ClCompile Include="Node.cpp">
       <Filter>Source Files\Node</Filter>
     </ClCompile>
-    <ClCompile Include="MonoLitteral.cpp">
-      <Filter>Source Files\Node\MonoLitteral</Filter>
-    </ClCompile>
     <ClCompile Include="TableCase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MonoLitteral_And.cpp">
-      <Filter>Source Files\Node\MonoLitteral</Filter>
+    <ClCompile Include="Operator.cpp">
+      <Filter>Source Files\Node\Operator</Filter>
     </ClCompile>
-    <ClCompile Include="MonoLitteral_Or.cpp">
-      <Filter>Source Files\Node\MonoLitteral</Filter>
+    <ClCompile Include="Operator_And.cpp">
+      <Filter>Source Files\Node\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="Operator_Or.cpp">
+      <Filter>Source Files\Node\Operator</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
