@@ -28,6 +28,9 @@
     <Filter Include="Header Files\Node\Not">
       <UniqueIdentifier>{830d3c02-63a8-46ee-87e6-4fde5b6e76da}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Node\Not">
+      <UniqueIdentifier>{d402e6f6-0e76-4cfd-9c64-d9484a668698}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -75,7 +78,7 @@
       <Filter>Source Files\Node\Operator</Filter>
     </ClCompile>
     <ClCompile Include="Node_Not.cpp">
-      <Filter>Source Files\Node</Filter>
+      <Filter>Source Files\Node\Not</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
