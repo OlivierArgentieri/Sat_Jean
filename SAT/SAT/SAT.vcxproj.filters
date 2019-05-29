@@ -48,6 +48,9 @@
     <ClInclude Include="Operator_Or.h">
       <Filter>Header Files\Node\Operator</Filter>
     </ClInclude>
+    <ClInclude Include="Node_Not.h">
+      <Filter>Header Files\Node\Not</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -70,6 +73,9 @@
     </ClCompile>
     <ClCompile Include="Operator_Or.cpp">
       <Filter>Source Files\Node\Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="Node_Not.cpp">
+      <Filter>Source Files\Node</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

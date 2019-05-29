@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Node_Not.h" />
     <ClInclude Include="Operator.h" />
     <ClInclude Include="Operator_And.h" />
     <ClInclude Include="Operator_Or.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="TableCase.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Node_Not.cpp" />
     <ClCompile Include="Operator.cpp" />
     <ClCompile Include="Operator_And.cpp" />
     <ClCompile Include="Operator_Or.cpp" />
