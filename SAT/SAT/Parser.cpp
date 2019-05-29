@@ -40,5 +40,35 @@ Parser::Parser(std::string _sExpression)
 
 int Parser::GetLessOperatorIndex()
 {
-	
+	int less_index = 0;
+	int parenthesis_index = 0, min_parenthesis_index = INT32_MAX;
+	int index = 0;
+	for (char c : m_working_string_)
+	{
+		if (c == '(')
+			parenthesis_index++;
+		if (c == ')')
+			parenthesis_index--;
+
+		if (c == '+' && min_parenthesis_index > parenthesis_index)
+		{
+			min_parenthesis_index = parenthesis_index;
+			less_index = index;
+		}
+
+		else if (c == '.' && min_parenthesis_index > parenthesis_index)
+		{
+			min_parenthesis_index = parenthesis_index;
+			less_index = index;
+		}
+
+		else if (c == '!' && min_parenthesis_index > parenthesis_index)
+		{
+			min_parenthesis_index = parenthesis_index;
+			less_index = index;
+		}
+		index++;
+	}
+
+	return less_index;
 }
