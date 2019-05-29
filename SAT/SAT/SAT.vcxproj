@@ -158,6 +158,7 @@
     <ClInclude Include="Node.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="TableCase.h" />
+    <ClInclude Include="truthTable.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Node_Not.cpp" />

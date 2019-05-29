@@ -1,2 +1,7 @@
-﻿  SAT.cpp
+﻿  Node.cpp
+  Node_Not.cpp
+  Operator.cpp
+  Operator_And.cpp
+  Operator_Or.cpp
+  Generating Code...
   SAT.vcxproj -> D:\OlivierArgentieri\Github_pull\Sat_Jean\SAT\Debug\SAT.exe

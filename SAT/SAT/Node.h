@@ -5,5 +5,5 @@ private:
 
 protected:
 public:
-	virtual bool GetResult();
+	virtual bool GetResult() =0;
 };
