@@ -9,7 +9,7 @@
 int main()
 {
 	Parser *p = new Parser();
-	Node* t = p->Parse("!(a.b.c)");
+	Node* t = p->Parse("(a.b)+(c.d)");
 
 	TableCase::GetInstance()->CreateTable();
 	TruthTable *test = new TruthTable(t);
