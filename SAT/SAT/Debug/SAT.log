@@ -1,4 +1,2 @@
-﻿  Parser.cpp
-d:\olivierargentieri\github_pull\sat_jean\sat\sat\parser.cpp(97): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
-d:\olivierargentieri\github_pull\sat_jean\sat\sat\parser.cpp(88): warning C4715: 'Parser::Parse': not all control paths return a value
+﻿  SAT.cpp
   SAT.vcxproj -> D:\OlivierArgentieri\Github_pull\Sat_Jean\SAT\Debug\SAT.exe

@@ -11,4 +11,7 @@ public:
 	TruthTable(Node* _ref_head);
 	void Display();
 	void AddValue(bool _bResult);
+	void WhatIsThis();
+	bool IsTautology();
+	bool IsSatisfaisable();
 };
