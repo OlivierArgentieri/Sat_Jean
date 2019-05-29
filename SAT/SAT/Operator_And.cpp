@@ -4,7 +4,7 @@
 Operator_And::Operator_And(Node& _refNodeLeft, Node& _refNodeRight)
 {
 	m_ptr_left = &_refNodeLeft;
-	m_ptr_right = &_refNodeLeft;
+	m_ptr_right = &_refNodeRight;
 }
 
 bool Operator_And::GetResult()

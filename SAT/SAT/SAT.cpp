@@ -7,17 +7,8 @@
 
 int main()
 {
-	TableCase::GetInstance()->AddRow("A");
-	TableCase::GetInstance()->AddRow("B");
-	TableCase::GetInstance()->AddRow("C");
-	TableCase::GetInstance()->AddRow("D");
-	TableCase::GetInstance()->AddRow("E");
-
-	TableCase::GetInstance()->CreateTable();
+	Parser *p = new Parser("a.(b+c)");
+	p->Parse();
 
 	TableCase::GetInstance()->Display();
-
-
-	Parser *p = new Parser("a.b+c");
-	
 }

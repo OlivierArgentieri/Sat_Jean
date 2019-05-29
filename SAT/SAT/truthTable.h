@@ -8,7 +8,7 @@ private:
 	std::vector<bool> m_values_;
 
 public:
-	TruthTable(Node& _ref_head);
+	TruthTable(Node* _ref_head);
 	void Display();
 	void AddValue(bool _bResult);
 };

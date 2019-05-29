@@ -14,7 +14,8 @@ private:
 	std::map<std::string, std::vector<bool>> m_main_table_;
 
 public:
-	static TableCase* GetInstance(); 
+	static TableCase* GetInstance();
+
 	void AddRow(std::string _sValue);
 	void NextCols();
 	void CreateTable();

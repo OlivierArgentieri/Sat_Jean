@@ -1,6 +1,12 @@
 #include "pch.h"
 #include "Operator_Or.h"
 
+Operator_Or::Operator_Or(const Operator_Or& _ref)
+{
+	m_ptr_left = _ref.m_ptr_left;
+	m_ptr_right = _ref.m_ptr_right;
+}
+
 Operator_Or::Operator_Or(Node& _refNodeLeft, Node& _refNodeRight)
 {
 	m_ptr_left = &_refNodeLeft;

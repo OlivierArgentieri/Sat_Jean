@@ -64,7 +64,6 @@ void TableCase::Display()
 			std::cout << b << " ";
 		}
 		std::cout << std::endl;
-
 	}
 }
 

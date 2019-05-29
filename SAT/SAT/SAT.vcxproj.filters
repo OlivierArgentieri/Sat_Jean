@@ -31,6 +31,12 @@
     <Filter Include="Source Files\Node\Not">
       <UniqueIdentifier>{d402e6f6-0e76-4cfd-9c64-d9484a668698}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Node\Value">
+      <UniqueIdentifier>{f660d1ff-31d5-4245-842c-b496bdfc9efc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Node\Node_value">
+      <UniqueIdentifier>{7925585f-e868-473e-9b4d-3b19312ce7ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -59,6 +65,9 @@
     </ClInclude>
     <ClInclude Include="Parser.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Node_Value.h">
+      <Filter>Header Files\Node\Value</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +100,9 @@
     </ClCompile>
     <ClCompile Include="Parser.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Node_Value.cpp">
+      <Filter>Source Files\Node\Node_value</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

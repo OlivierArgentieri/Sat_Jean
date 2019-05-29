@@ -10,4 +10,7 @@ protected:
 	Node* m_ptr_right;
 
 	virtual bool GetResult() =0;
+	Operator();
+public:
+	Operator(const Operator& _ref);
 };
